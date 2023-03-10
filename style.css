@@ -84,6 +84,7 @@ a {
 }
 .container-large-image {
   flex: 1 1 auto;
+  
 }
 .border-large-image {
   text-align: center;
@@ -91,4 +92,18 @@ a {
 
 .large-image {
   width: 100%;
+
+  
+}
+.title-large-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ position: absolute;
+ top:330px;
+ left: 100px;
+  font-size: 10em;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color:white;
 }
