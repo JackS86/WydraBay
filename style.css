@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  background: #57cc99;
+  font-family: "Roboto", sans-serif;
+}
+
+#wydrabartek {
+  font-size: large;
+}
+
+.logo {
+  background: #38a3a5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: azure;
+  font-weight: 200;
+}
+.logo-icon {
+  width: 100px;
+  position: absolute;
+  top: auto;
+}
+
+.ornament-title {
+  font-weight: 900;
+}
+
+.tytuly-miniatury {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+.main_title {
+  flex: 0 1 auto;
+}
+.main-text {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lista-miniatur {
+  flex: 0 1 auto;
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.obraz-miniatury {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+.element-listy {
+  display: inline-block;
+  /* display: block; */
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 10px;
+  background-color: #38a3a5;
+  width: 120px;
+}
+.container-large-image {
+  flex: 1 1 auto;
+}
+
+.large-image {
+  width: 100%;
+}
