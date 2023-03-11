@@ -48,8 +48,6 @@ a {
 .main_title {
   flex: 0 1 auto;
   position: relative;
- 
-
 }
 .main-text {
   flex: 1 1 auto;
@@ -107,12 +105,12 @@ a {
   font-family: "Lobster", cursive;
   color: white;
 }
-@media all and (min-width:320px) {
+@media (max-width: 575.98px) {
   .logo {
     background: #38a3a5;
     text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 35px;
     color: azure;
     font-weight: 100;
   }
@@ -125,5 +123,17 @@ a {
     display: block;
     width: 100%;
     height: 85px;
+  }
+  .title-large-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 260px;
+    right:250px;
+    font-size: 4em;
+    text-align: left;
+    font-family: "Lobster", cursive;
+    color: white;
   }
 }
