@@ -1,15 +1,45 @@
 html,
 body {
   height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
   font-size: 10px;
   background: #57cc99;
   font-family: "Roboto", sans-serif;
 }
+.HollyGrail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+}
+.HolyGrail-content {
+  flex: 1;
+}
+.HolyGrail-nav,
+.HolyGrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  align-self: center;
+  justify-content: center;
+}
 
+.HolyGrail-ads {
+  background-color: aliceblue;
+  display: flex;
+  flex: 1 1 2;
+}
+
+.text-aside {
+  font-size: 16px;
+}
+.HolyGrail-nav {
+  display: flex;
+  justify-content: space-around;
+  /* put the nav on the left */
+  order: -1;
+}
 #wydrabartek {
   font-size: large;
 }
@@ -54,17 +84,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
-.lista-miniatur {
-  flex: 0 1 auto;
-  list-style: none;
-  display: flex;
-  align-items: baseline;
-  padding: 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  justify-content: space-around;
-}
 .obraz-miniatury {
   display: block;
   width: 100%;
@@ -72,7 +91,6 @@ a {
 }
 .element-listy {
   display: inline-block;
-  /* display: block; */
   border: 2px solid white;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -83,27 +101,29 @@ a {
   min-width: 120px;
   max-width: 120px;
 }
-.container-large-image {
-  flex: 1 1 auto;
-}
-.border-large-image {
-  text-align: center;
-}
 
 .large-image {
-  width: 100%;
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 25px;
 }
 .title-large-image {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 330px;
-  left: 100px;
+  top: 230px;
+  left: 200px;
   font-size: 10em;
   text-align: center;
   font-family: "Lobster", cursive;
   color: white;
+}
+
+footer {
+  background-color: antiquewhite;
+  height: 10px;
 }
 @media (max-width: 575.98px) {
   .logo {
@@ -129,11 +149,24 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 260px;
-    right:250px;
+    top: 280px;
+    right: 250px;
     font-size: 4em;
     text-align: left;
     font-family: "Lobster", cursive;
     color: white;
+  }
+  .lista-miniatur {
+    flex: 0 1 auto;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .border-acapit {
+    color: aliceblue;
   }
 }
