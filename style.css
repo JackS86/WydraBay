@@ -10,8 +10,6 @@ body {
   justify-content: space-between;
   align-self: baseline;
 
-  background-color: violet;
-
   min-height: 100vh;
 }
 .HollyGrail-title {
@@ -22,33 +20,35 @@ body {
   flex: 1;
 }
 .HolyGrail-content {
-  background-color: violet;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  position: relative;
+  top:30px;
 }
 
-.HollyGrail-content-txt {
+.HollyGrail-content-text {
+  height: 10px;
   font-size: 16px;
+  background-color: blue;
 }
 
 .HollyGrail nav {
   position: relative;
-  top:20px;
+  top: 20px;
 }
 
 .HolyGrail-nav,
 .HolyGrail-ads {
   /* 12em is the width of the columns */
-  flex: 2 0 6em;
+  flex: 1 0 10em;
 }
 
 .HolyGrail-ads {
-  background-color: violet;
+  color:white;
   position: relative;
-  right:30px;
+  right: 30px;
   padding: 20px;
   display: flex;
   flex: 1;
@@ -147,17 +147,44 @@ a {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 160px;
-  left: 530px;
+  top: 50px;
+  left: 50px;
   font-size: 10em;
   text-align: center;
   font-family: "Lobster", cursive;
   color: white;
 }
 
+.HollyGrail-btn {
+  background-color: #38a3a5;
+  display: block;
+  height: 125px;
+  width: 125px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 2px solid white;
+}
+
+.plus-btn {
+  font-size: 48px;
+  color: aliceblue;
+}
+
 footer {
-  background-color: coral;
+  background-color: #38a3a5;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color:white;
 }
 
 /* @media (max-width: 575.98px) {
