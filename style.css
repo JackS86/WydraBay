@@ -215,7 +215,7 @@ footer p {
   }
   .HollyGrail nav {
     position: relative;
-    top: 200px;
+    top: 220px;
     right: 20px;
     display: flex;
     background-color: rgb(58, 223, 168);
@@ -228,7 +228,7 @@ footer p {
   .HolyGrail-ads {
     color: white;
     position: relative;
-    top: 180px;
+    top: 200px;
     right: 30px;
     padding: 20px;
     display: flex;
@@ -248,7 +248,7 @@ footer p {
   }
   footer {
     position: relative;
-    top: 200px;
+    top: 240px;
     background-color: #38a3a5;
     height: 100px;
     display: flex;
