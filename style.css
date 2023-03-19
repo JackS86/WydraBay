@@ -216,9 +216,8 @@ footer p {
   .HollyGrail nav {
     position: relative;
     top: 220px;
-    right: 20px;
+    right: 10px;
     display: flex;
-    background-color: rgb(58, 223, 168);
   }
   .lista-miniatur ul {
     /* flex: 0 1 auto; */
@@ -227,13 +226,32 @@ footer p {
   }
   .HolyGrail-ads {
     color: white;
-    position: relative;
-    top: 200px;
-    right: 30px;
-    padding: 20px;
+    position: absolute;
+    top: 1000px;
+    left: 10px;
     display: flex;
-    flex: 1;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 200px;
   }
+
+  .HolyGrail-ads p {
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  .large-image {
+    position: relative;
+    top: -20px;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
   .title-large-image {
     display: flex;
     justify-content: center;
@@ -248,7 +266,7 @@ footer p {
   }
   footer {
     position: relative;
-    top: 240px;
+    top: 440px;
     background-color: #38a3a5;
     height: 100px;
     display: flex;
