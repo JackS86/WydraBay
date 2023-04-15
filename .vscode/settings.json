@@ -1,2 +1,7 @@
 {
+    "liveServer.settings.multiRootWorkspaceName": "website-Wydrowisko",
+
+
+    "editor.formatOnSave": true,
+    "liveServer.settings.CustomBrowser": "chrome"
 }
