@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  
+}
+.HollyGrail {
+  background-color: rgb(59, 211, 160);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
+}
+.HollyGrail-title{
+  padding-top: 20px;
+  width: 100%;
+}
+.logo {
+  background: #38a3a5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: azure;
+  font-weight: 200;
+}
+.ornament-title {
+  font-weight: 900;
+}
+.logo-icon {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+}
+/* lista ul*/
+.lista-miniatur {
+  /* flex: 0 1 auto; */
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.tytuly-miniatury {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.obraz-miniatury {
+  display: block;
+  width: 100%;
+  height: 85px;
+}
+.element-listy {
+display: inline-block;
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #38a3a5;
+  min-width: 120px;
+  max-width: 120px;
+}
+.large-image{
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.title-large-image {
+  position: absolute;
+  top: 150px;
+  left: 390px;
+  font-size: 10em;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: white;
+}
+
+
+.HolyGrail-ads {
+  font-size: 12px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: #38a3a5;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
