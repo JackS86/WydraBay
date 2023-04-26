@@ -9,7 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .HollyGrail{
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
 }
@@ -119,6 +118,7 @@ footer {
   border-top-right-radius: 55px;
   position: fixed;
   bottom: 0px;
+  box-shadow: 0px 5px 5px rgb(73, 73, 73);
 
 }
 
@@ -130,6 +130,84 @@ footer p {
 }
 
 @media (200px <= width <= 425px)    { 
+  .HollyGrail {
+    background-color: aquamarine;
+  }
+  .HollyGrail-title{
+    position: fixed;
+   
+     background-color: rgb(33, 173, 162);
+     width:42.5%;
+     height: auto;
+    text-transform: uppercase;
+     color: azure;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0px 5px 5px rgb(73, 73, 73);
+     border-bottom-left-radius: 55px;
+     border-bottom-right-radius: 55px;
+   }
+   .logo-one-word { 
+    font-size: 20px;
+    font-weight: 100; position: relative;
+    left:10px;
+  }
+  .large-image-responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:200%;
+    height: 800px;
+    object-fit: cover;
+    object-position: -700px 0px;
+  }
+  nav {
+    position: fixed;
+     top:120px;
+     left:10px;
+     padding: 10px;
+   }
+
+  .lista-miniatur {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .obraz-miniatury {
+    display: block;
+    width: 100%;
+    height: 65px;
+  }
+  .element-listy {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #38a3a5;
+    min-width: 90px;
+    max-width: 90px;
+  }
+
+  .title-large-image {
   
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    font-size: 4em;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    color: white;
+    width:60%;
+  }
+  .logo-icon{
+    width:75px;
+    height: auto;
+  }
 }
  
