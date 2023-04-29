@@ -14,8 +14,7 @@ body {
 }
 .HollyGrail-title{
  position: fixed;
-
-  background-color: rgb(33, 173, 162);
+background-color: rgb(33, 173, 162);
   width:100%;
    text-transform: uppercase;
   color: azure;
@@ -44,6 +43,9 @@ body {
   margin-right: auto;
   width:100%;
   height: auto;
+  object-fit: cover;
+    object-position: 80% 100%;
+    overflow: hidden;
 }
 nav {
  position: fixed;
@@ -88,8 +90,8 @@ a {
   max-width: 120px;
 }
 .title-large-image {
-  
-  position: absolute;
+  display: block;
+  position:fixed;
   top: 280px;
   left: 50px;
   font-size: 10em;
@@ -98,7 +100,8 @@ a {
   color: white;
 }
 .HolyGrail-ads{
-  position: absolute;
+  display:block;
+  position: fixed;
   top:440px;
   left:50px;
   font-size: 20px;
@@ -130,92 +133,104 @@ footer p {
 }
 
 @media (200px <= width <= 425px)    { 
-  .HollyGrail {
+  .HollyGrail{
     background-color: aquamarine;
   }
   .HollyGrail-title{
-    position: fixed;
-   
-     background-color: rgb(33, 173, 162);
-     width:50%;
-     height: auto;
-    text-transform: uppercase;
-     color: azure;
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     box-shadow: 0px 5px 5px rgb(73, 73, 73);
-     border-bottom-left-radius: 55px;
-     border-bottom-right-radius: 55px;
-   }
-   .logo-one-word { 
+    background-color: rgb(33, 173, 91);
+  width:100%;
+  height: 70px;
+  }
+  .logo-one-word { 
     font-size: 20px;
     font-weight: 100; position: relative;
-    left:10px;
+    left:0px;
+  }
+  .logo-icon{
+    width:65px;
+    height: auto;
   }
   .large-image-responsive{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:200%;
-    height: 800px;
-    object-fit: cover;
-    object-position: -700px 0px;
-  }
-  nav {
-    position: fixed;
-     top:120px;
-     left:10px;
-     padding: 10px;
-   }
+    position: relative;
+   top:30px;
 
-  .lista-miniatur {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+   height: 500px;
+   z-index: -2;
   }
-  .obraz-miniatury {
-    display: block;
-    width: 100%;
-    height: 65px;
-  }
-  .element-listy {
-    display: inline-block;
-    border: 2px solid white;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    background-color: #38a3a5;
-    min-width: 90px;
-    max-width: 90px;
-  }
-
   .title-large-image {
-  
-    position: absolute;
-    top: 100px;
-    left: 120px;
-    font-size: 4em;
+    display: block;
+    position:fixed;
+    top: 280px;
+    left: 50px;
+    font-size: 5em;
     text-align: center;
     font-family: "Lobster", cursive;
     color: white;
-    width:60%;
   }
-  .logo-icon{
-    width:75px;
-    height: auto;
-  }
-  .HolyGrail-ads{
-    position: absolute;
-    top:440px;
-    left:140px;
-    font-size: 16px;
-    width:150px;
+  nav {
+    position: fixed;
+     top:40px;
+     left:0px;
+     padding: 40px;
+   }
+   
+   .lista-miniatur {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     
+   }
+   .tytuly-miniatury {
+     display: block;
+     margin: 0;
+     padding: 4px 10px;
+     color: white;
+     font-size: 12px;
+     font-weight: 500;
+   }
+   a {
+     text-decoration: none;
+   }
+   
+   .obraz-miniatury {
+     display: block;
+     width: 100%;
+     height: 55px;
+   }
+   .element-listy {
+     display: inline-block;
+     border: 2px solid white;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     background-color: #38a3a5;
+     min-width: 80px;
+     max-width: 80px;
+   }
+   .HolyGrail-ads{
+    display:block;
+    top:520px;
+    left:0px;
+    font-size: 14px;
+    text-align: left;
+    width:300px;
+    height: 400px;
     color: white;
+    padding: 10px;
+    background-color: rgb(33, 173, 91);
   }
+  footer {
+    box-shadow: 0px 0px 5px rgb(73, 73, 73);
+  }
+  footer p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+
+
 }
  
