@@ -147,6 +147,7 @@ footer p {
   padding: 10px;
 }
 
+
 @media (200px <=width <=768px) {
   .HollyGrail {
     background-color: aquamarine;
