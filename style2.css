@@ -147,6 +147,18 @@ footer p {
   padding: 10px;
 }
 
+.hide-large-image-responsive .large-image-responsive {
+  display: none;
+}
+
+.hide-large-image-responsive .lista-miniatur {
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide-large-image-responsive .element-listy {
+  max-width: 80%;
+}
 
 @media (200px <=width <=768px) {
   .HollyGrail {
