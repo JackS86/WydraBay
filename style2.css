@@ -67,6 +67,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 20px 0;
 
 }
 
@@ -100,6 +101,19 @@ a {
   background-color: #38a3a5;
   min-width: 120px;
   max-width: 120px;
+  transition: transform 133ms;
+  -webkit-transition: transform 133ms;
+  -moz-transition: transform 133ms;
+  -ms-transition: transform 133ms;
+  -o-transition: transform 133ms;
+}
+
+.element-listy:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .title-large-image {
@@ -212,6 +226,7 @@ footer p {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0 35px;
 
   }
 

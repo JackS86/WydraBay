@@ -33,7 +33,8 @@ function addServiceClickByMiniatura(miniatura) {
     'use strict';
     miniatura.addEventListener('click', function(zdarzenie){
     zdarzenie.preventDefault();
-    changePicByMiniatura(miniatura);       
+    changePicByMiniatura(miniatura);    
+    showLargeImage();   
     });
 }
 function readTableMiniatures() {
@@ -45,6 +46,11 @@ function readTableMiniatures() {
 function hideLargeImage() {
     'use strict';
     document.body.classList.add(CLASS_HIDE_LARGE_PICTURE);
+}
+
+function showLargeImage() {
+    'use strict';
+    document.body.classList.remove(CLASS_HIDE_LARGE_PICTURE);
 }
 
 function addServiceKey() {
